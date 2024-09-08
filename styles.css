@@ -74,8 +74,8 @@ img {
     display: block;
     object-fit: cover;
     width: 100%;
+    border-radius: 25px;
 }
-
 
 /* ############# Nav Bar Styles ############# */
 nav {
@@ -183,14 +183,14 @@ header {
     transition: var(--transition);
 }
 
-.header_left:hover .header_image-sm{
+.left:hover .header_image-sm {
     opacity: 0;
 }
 
-.header_left:hover .header_image-lg{
+.left:hover .header_image-lg {
     filter: saturate(1)
     brightness(1);
-    border: 1rem solid var(--primary-color);
+    border: 0rem solid var(--primary-color);
     top: 0;
     left: 0;
 }
