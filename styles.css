@@ -201,6 +201,8 @@ header {
     align-items: flex-start;
 }
 
+
+/* General empty styles */
 .empty {
     height: 3.5rem;
     width: 18rem;
@@ -228,4 +230,66 @@ header {
     color: var(--secondary-color);
     border-radius: 0.5rem;
     transition: var(--transition);
+}
+
+.header_frames {
+    position: absolute;
+    top: 88vh;
+    right: 44rem;
+    transition: var(--transition);
+}
+
+.header_frame {
+    width: 14rem;
+    border: 0.4rem solid var(--accent-color);
+    box-shadow: 0 0 4rem rgba(0, 0, 0, 0.5);
+    position: absolute;
+    transform: rotate(-10deg);
+    transform-origin: bottom left;
+    transition: var(--transition);
+}
+
+.header_frame:nth-child(2) {
+    transform: rotate(20deg);
+    top: -2rem;
+    left: 2rem;
+}
+
+.header_frames:hover .header_frame {
+    transform: rotate(0deg);
+}
+
+.header_frames:hover .header_frame:nth-child(2) {
+    top: 0;
+    left: 15rem;
+}
+
+/* General styles */
+.contact_btn {
+    width: 10rem;
+    height: 10rem;
+    color: var(--secondary-color);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.header_btn {
+    background: linear-gradient(30deg, var(--primary-color), var(--primary-color-light), var(--primary-color));
+    position: absolute;
+    right: 6%;
+    bottom: -3rem;
+}
+
+.header_btn:hover {
+    transform: translateY(-1rem);
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.3);
+    color: var(--secondary-color);
+}
+
+.contact_btn i {
+    font-size: 3.5rem;
+    position: absolute;
 }
