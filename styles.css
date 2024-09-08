@@ -92,8 +92,8 @@ nav {
 }
 
 .sticky {
-    background: var(--accent-color-light);
-    border-bottom: 0.2rem solid var(--primary-color);
+    background: var(--accent-color);
+    border-bottom: 0.2rem solid var(--accent-color);
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
 }
 
@@ -136,4 +136,36 @@ nav {
     box-shadow: 0 0 5px var(--primary-color);
     text-shadow: 0 0 5px var(--primary-color);
     border-radius: 100%;
+}
+
+/* ############# Header Styles ############# */
+header {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    background: linear-gradient(var(--primary-color-light), var(--secondary-color-light));
+    overflow:hidden
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 40% 50%;
+    gap: 10%;
+    margin: 10rem;
+    position: relative;
+}
+
+.header_image-bg {
+    background: var(--accent-color);
+    height: 22rem;
+    width: 16rem;
+    position: absolute;
+}
+
+.header_image-lg {
+    width: 29rem;
+    position: relative;
+    top: 1rem;
+    left: 1rem;
 }
