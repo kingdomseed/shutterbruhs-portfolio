@@ -295,3 +295,10 @@ header {
     font-size: 3.5rem;
     position: absolute;
 }
+
+.contact_btn p {
+    font-size: 1rem;
+    font-weight: 600;
+    width: 10rem;
+    height: 10rem;
+}
