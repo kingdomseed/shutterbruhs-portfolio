@@ -237,16 +237,18 @@ header {
     top: 88vh;
     right: 44rem;
     transition: var(--transition);
+    background: transparent;
 }
 
 .header_frame {
     width: 14rem;
-    border: 0.4rem solid var(--accent-color);
+    border-radius: 50%;
     box-shadow: 0 0 4rem rgba(0, 0, 0, 0.5);
     position: absolute;
     transform: rotate(-10deg);
     transform-origin: bottom left;
     transition: var(--transition);
+    background: transparent;
 }
 
 .header_frame:nth-child(2) {
