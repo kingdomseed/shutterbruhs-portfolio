@@ -235,7 +235,7 @@ header {
 .header_frames {
     position: absolute;
     top: 88vh;
-    right: 44rem;
+    right: 54rem;
     transition: var(--transition);
     background: transparent;
 }
@@ -301,4 +301,19 @@ header {
     font-weight: 600;
     width: 10rem;
     height: 10rem;
+    display: flex;
+    justify-content: center;
+
+    animation: spinText 30s linear infinite;
+}
+
+.contact_btn p span {
+    position: absolute;
+    transform-origin: 0.3rem 5rem;
+}
+
+@keyframes spinText {
+    to {
+        transform: rotate(360deg);
+    }
 }

@@ -4,10 +4,16 @@ window.addEventListener('scroll', () => {
 });
 
 // CONTACT BUTTONS ANIMATION
-const textButtons = document.querySelectorAll('.contact_btn');
+document.addEventListener('DOMContentLoaded', () => {
+  const textButtons = document.querySelectorAll('.contact_btn');
 
-textButtons.forEach((textButton) => { 
-  let text = textButton.querySelector('p');
+  textButtons.forEach((textButton) => {
+    let text = textButton.querySelector('p'); // Select the <p> tag inside .contact_btn
 
-  text.innerHTML = text.innerHTML.split('').map((char, index) => '<span style="transform: rotate(${index * 12}deg)">${char}</span>').join('')
-})
+    if (text) { // Ensure the <p> element exists
+      text.innerHTML = text.innerHTML.split('').map((character, index) =>
+        `<span style="transform: rotate(${index * 12}deg)">${character}</span>`
+      ).join('');
+    }
+  });
+});
